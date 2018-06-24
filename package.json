@@ -1,0 +1,60 @@
+{
+	"name": "daniel-rossy-theme",
+	"version": "1.0.0",
+	"description": "the theme for personal web developer blog on Ghost CMS",
+	"main": "index.js",
+	"engines": {
+		"ghost": ">=1.2.0"
+	},
+	"scripts": {
+		"dev": "gulp"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/DanilRostov/daniel_rossy_theme.git"
+	},
+	"keywords": [
+		"ghost",
+		"theme"
+	],
+	"author": {
+		"name": "Danil Rostov",
+		"email": "daniil.rossy@gmail.com"
+	},
+	"gpm": {
+		"type": "theme",
+		"categories": [
+			"Minimal",
+			"Blog"
+		]
+	},
+	"license": "MIT",
+	"screenshots": {
+		"desktop": "assets/screenshot-desktop.jpg",
+		"mobile": "assets/screenshot-mobile.jpg"
+	},
+	"bugs": {
+		"url": "https://github.com/DanilRostov/daniel_rossy_theme/issues"
+	},
+	"contributors": "https://github.com/DanilRostov/daniel_rossy_theme/contributors",
+	"devDependencies": {
+		"autoprefixer": "^8.6.0",
+		"browser-sync": "^2.24.4",
+		"css-mqpacker": "^6.0.2",
+		"del": "^3.0.0",
+		"gulp": "^3.9.1",
+		"gulp-cleancss": "^0.2.2",
+		"gulp-notify": "^3.2.0",
+		"gulp-plumber": "^1.2.0",
+		"gulp-postcss": "^7.0.1",
+		"gulp-rename": "^1.2.3",
+		"gulp-sass": "^4.0.1",
+		"gulp-sequence": "^1.0.0",
+		"gulp-sourcemaps": "^2.6.4",
+		"gulp-wait": "0.0.2",
+		"postcss-object-fit-images": "^1.1.2"
+	},
+	"config": {
+		"posts_per_page": 10
+	}
+}

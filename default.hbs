@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{{meta_title}}</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="{{asset "css/dist/style.css"}}" />
+
+    {{ghost_head}}
+
+</head>
+<body class="{{body_class}}">
+
+    <div class="container">
+        
+        {{!-- Main content --}}
+        {{{body}}}
+        
+        {{!-- Footer --}}
+        <footer class="footer">
+            <div class="footer__container">
+
+                {{!-- Navigation --}}
+                {{> "navigation-footer"}}
+                
+                {{!-- Contacts --}}
+                <ul id="contacts" class="footer__contacts-list">
+                    <div class="footer__contacts-box">
+                        <li class="footer__contacts-item footer__contacts-item--first">
+                            <a target="_blank" href="https://github.com/DanilRostov" class="footer__contacts-link">{{> "icons/github"}}github.com/DanilRostov</a>
+                        </li>
+                        <li class="footer__contacts-item footer__contacts-item--second">
+                            <span class="footer__contacts-link">{{> "icons/email"}}daniil.rossy@gmail.com</span>
+                        </li>
+                    </div>
+                    <div class="footer__contacts-box">
+                        <li class="footer__contacts-item">
+                            <a target="_blank" href="https://vk.com/feed" class="footer__contacts-link">{{> "icons/vk"}}vk.com/danielrossy</a>
+                        </li>
+                        <li class="footer__contacts-item footer__contacts-item--second">
+                            <a target="_blank" href="https://www.linkedin.com/in/danielrossy/" class="footer__contacts-link">{{> "icons/linkedin"}}linkedin.com/in/danielrossy</a>
+                        </li>
+                    </div>
+                </ul>
+
+                {{!-- Copyright --}}
+                <div class="footer__copyright">daniel.rossy © 2018</div>
+
+            </div>
+        </footer>
+
+    </div>
+    
+    <script type="text/javascript" src="{{asset "js/menu.js"}}"></script>
+    {{ghost_foot}}
+
+</body>
+</html>

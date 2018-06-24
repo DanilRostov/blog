@@ -1,0 +1,22 @@
+{{!< default}}
+
+{{!-- Header --}}
+{{> "header"}}
+
+{{!-- Navigation --}}
+{{> "navigation-header"}}
+
+{{!-- Main content --}}
+<main class="articles">
+	<div class="articles__container">
+		<h2 class="articles__title">Articles flow</h2>
+		<div class="articles__list">
+			{{#foreach posts}}
+				{{> "post-card"}}
+			{{/foreach}}
+		</div>
+{{!-- 		<div class="articles__btn-box">
+			<button class="articles__btn-show-more">Show more</button>
+		</div> --}}
+	</div>
+</main>
